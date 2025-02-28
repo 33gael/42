@@ -1,27 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcapitalize.c                                 :+:      :+:    :+:   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/24 13:36:18 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/24 14:07:54 by qludger          ###   ########.fr       */
+/*   Created: 2025/02/28 18:13:00 by qludger           #+#    #+#             */
+/*   Updated: 2025/02/28 18:15:17 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcapitalize(char *str)
+char *ft_strncat(char *dest, char *src, unsigned int nb)
 {
-    int i;
+    unsigned int    i;
+    unsigned int    j;
 
     i = 0;
-    while (str[i] != '\0')
+    j = 0;
+    while (dest[j])
     {
-        if (str[i] && str[i])
-        {
-            /* code */
-        }
-        
+        j++;
     }
-    
+    while (src[i] && i < nb)
+    {
+        dest[j] = src[i];
+        j++;
+        i++;
+    }
+    dest[j] = '\0';
+    return (dest);
 }
