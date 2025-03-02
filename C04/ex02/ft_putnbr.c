@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/28 22:24:48 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/01 14:29:03 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/01 14:30:41 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/01 15:13:36 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,30 @@ void    ft_putchar(char c)
     write (1, &c, 1);
 }
 
-void ft_putstr(char *str)
+void    ft_putnbr(int nb)
 {
-    int i;
-
-    i = 0;
-    while (str[i])
+    if (nb < 0)
     {
-        ft_putchar(str[i]);
-        i++;
+        nb = -nb;
+        ft_putchar('-');
+    }
+    if (nb == -2147483648)
+    {
+        write (1, "2147483648", 11);
+    }
+    if (nb >= 0 && nb < 10)
+    {
+        ft_putchar(nb + '0');
+    }
+    else if (nb > 10)
+    {
+        ft_putnbr(nb / 10);
+        ft_putnbr(nb % 10);
     }
 }
+/*
+int main()
+{
+    ft_putnbr(42);
+}
+*/
