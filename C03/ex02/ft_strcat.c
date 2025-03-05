@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/28 17:57:49 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/28 18:38:41 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/05 11:44:42 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/05 11:55:56 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,8 @@ char *ft_strcat(char *dest, char *src)
     while (src[i])
     {
         dest[j] = src[i];
-        i++;
         j++;
+        i++;
     }
     dest[j] = '\0';
     return (dest);
