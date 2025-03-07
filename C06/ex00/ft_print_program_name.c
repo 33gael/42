@@ -1,32 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*   ft_print_program_name.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/05 11:56:39 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/05 13:29:57 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/05 13:35:39 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/05 23:22:29 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strncat(char *dest, char *src, unsigned int nb)
+#include <unistd.h>
+
+int main(int argc, char *argv[])
 {
-    unsigned int i;
-    unsigned int j;
+    int i;
 
     i = 0;
-    j = 0;
-    while (dest[j])
+    (void) argc;
+    while (argv[0][i])
     {
-        j++;
-    }
-    while (src[i] && i < nb)
-    {
-        dest[j] = src[i];
-        j++;
+        write (1, &argv[0][i], 1);
         i++;
     }
-    dest[j] = '\0';
-    return (dest);
+    write (1, "\n", 1);
 }
