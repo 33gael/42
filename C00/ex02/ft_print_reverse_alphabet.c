@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/29 12:20:22 by qludger           #+#    #+#             */
-/*   Updated: 2025/01/29 12:23:30 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/12 17:16:25 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/12 17:18:53 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,5 @@
 
 void    ft_print_reverse_alphabet(void)
 {
-    write (1, "zyxwvutsrqponmlkjihgfedcba", 26);
+    write (1,"zyxwvutsrqponmlkjihgfedcba", 26);
 }
-
-/*
-int main()
-{
-    ft_print_reverse_alphabet();
-}
-*/

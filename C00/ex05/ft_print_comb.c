@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/06 19:23:25 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/06 22:33:22 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/12 18:31:26 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/12 18:55:06 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,18 +35,19 @@ void    ft_print_comb(void)
                 ft_putchar(a + '0');
                 ft_putchar(b + '0');
                 ft_putchar(c + '0');
-
                 if (!(a == 7 && b == 8 && c == 9))
-                    write (1, ", ", 2);
+                    write (1, ", ",2);
                 c++;
             }
             b++;
         }
         a++;
     }
+    
 }
 /*
 int main()
 {
     ft_print_comb();
-}*/
+}
+*/

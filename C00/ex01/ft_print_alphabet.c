@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/29 12:17:20 by qludger           #+#    #+#             */
-/*   Updated: 2025/01/29 12:19:32 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/12 17:15:21 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/12 17:16:31 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,9 +16,3 @@ void    ft_print_alphabet(void)
 {
     write (1, "abcdefghijklmnopqrstuvwxyz", 26);
 }
-/*
-int main()
-{
-    ft_print_alphabet();
-}
-*/
