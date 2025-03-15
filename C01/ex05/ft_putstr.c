@@ -5,28 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/08 11:30:37 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/08 11:39:51 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/15 11:36:25 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/15 11:38:42 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void ft_putstr(char *str)
+void    ft_putstr(char *str)
 {
     int i;
 
     i = 0;
-    while (str[i] != '\0')
+    while (str[i])
     {
         write (1, &str[i], 1);
         i++;
     }
 }
-
-/*
-int main()
-{
-    ft_putstr("teset");
-}
-*/

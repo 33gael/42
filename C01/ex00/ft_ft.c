@@ -5,26 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/05 19:01:46 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/06 22:40:51 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/14 18:19:53 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/14 18:20:42 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
-void ft_ft(int *nbr)
+void    ft_ft(int *nbr)
 {
     *nbr = 42;
 }
-/*
-int		main(void)
-{
-	int a;
-	int *ptr;
-
-	a = 21;
-	ptr = &a;
-	printf("Avant (21): %d\n", a);
-	ft_ft(ptr);
-	printf("Apres (42): %d\n", a);
-}*/

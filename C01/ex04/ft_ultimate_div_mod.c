@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/08 11:26:19 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/08 11:28:39 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/15 11:27:25 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/15 11:35:33 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_ultimate_div_mod(int *a, int *b)
+void    ft_ultimate_div_mod(int *a, int *b)
 {
     int div;
     int mod;

@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/06 22:44:36 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/06 22:46:40 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/14 18:33:06 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/15 11:20:03 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_div_mod(int a, int b, int *div, int *mod)
+void    ft_div_mod(int a, int b, int *div, int *mod)
 {
     *div = a / b;
     *mod = a % b;

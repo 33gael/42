@@ -5,16 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/06 22:41:57 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/06 22:43:38 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/14 18:23:14 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/14 18:32:21 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_swap(int *a, int *b)
+void    ft_swap(int *a, int *b)
 {
-    int swap;
+    int c;
 
-    swap = *a;
+    c = *a;
     *a = *b;
-    *b = swap;
+    *b = c;
 }
