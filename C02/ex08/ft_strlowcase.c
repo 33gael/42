@@ -5,19 +5,19 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/23 18:35:00 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/23 18:45:02 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/16 21:58:18 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/16 21:58:44 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strlowcase(char *str)
+char    *ft_strlowcase(char *str)
 {
     int i;
 
     i = 0;
     while (str[i])
     {
-        if (str[i] && str[i] >= 65 && str[i] <= 90)
+        if (str[i] > 64 && str[i] < 91)
         {
             str[i] += 32;
         }

@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/22 13:10:40 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/22 13:29:21 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/16 19:31:48 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/16 19:33:41 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int ft_str_is_numeric(char *str)
     i = 0;
     while (str[i])
     {
-        if (str[i] && (str[i] < 48 || str[i] > 57))
+        if (str[i] < 48 || str[i] > 57)
         {
             return (0);
         }

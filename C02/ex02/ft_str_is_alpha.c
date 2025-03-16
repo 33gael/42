@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/22 12:51:56 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/22 13:09:26 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/16 19:22:16 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/16 19:28:40 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int ft_str_is_alpha(char *str)
     i = 0;
     while (str[i])
     {
-        if (str[i] && (str[i] < 65 || str[i] > 90) && (str[i] < 97 || str[i] > 122))
+        if ((str[i] < 65 || str[i] > 90) && (str[i] < 97 || str[i] > 122))
         {
             return (0);
         }

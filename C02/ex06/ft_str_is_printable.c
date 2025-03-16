@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/23 17:33:13 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/23 17:36:06 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/16 19:38:30 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/16 19:39:23 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int ft_str_is_printable(char *str)
     i = 0;
     while (str[i])
     {
-        if ((str[i] != '\0' && str[i] < 32) || str[i] > 126)
+        if (str[i] < 32 || str[i] > 126)
         {
             return (0);
         }

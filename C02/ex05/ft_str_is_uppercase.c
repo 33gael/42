@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/02/23 17:16:46 by qludger           #+#    #+#             */
-/*   Updated: 2025/02/23 17:22:05 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/16 19:36:29 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/16 19:37:26 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,9 @@ int ft_str_is_uppercase(char *str)
     int i;
 
     i = 0;
-    while (str[i] != '\0')
+    while (str[i])
     {
-        if ((str[i] != '\0' && str[i] < 65) || str[i] > 90)
+        if (str[i] < 65 || str[i] > 90)
         {
             return (0);
         }
