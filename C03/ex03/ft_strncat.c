@@ -5,15 +5,15 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/05 11:56:39 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/05 13:29:57 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/17 15:36:47 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/17 15:40:40 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strncat(char *dest, char *src, unsigned int nb)
+char    *ft_strncat(char *dest, char *src, unsigned int nb)
 {
-    unsigned int i;
-    unsigned int j;
+    unsigned int    i;
+    unsigned int    j;
 
     i = 0;
     j = 0;

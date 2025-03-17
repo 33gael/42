@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/05 11:44:42 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/05 11:55:56 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/17 14:17:35 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/17 15:34:37 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char *ft_strcat(char *dest, char *src)
+char    *ft_strcat(char *dest, char *src)
 {
     int i;
     int j;
