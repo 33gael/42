@@ -1,24 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/19 22:14:15 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/19 22:19:13 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/22 13:50:26 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/23 22:05:23 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char    *ft_strcpy(char *dest, char *src)
+
+int ft_atoi(char *str)
 {
     int i;
+    int result;
+    int sign;
 
     i = 0;
-    while (src[i])
+    result = 0;
+    sign = 1;
+    while (str[i] <= ' ')
+        i++;
+    while (str[i] == '-' || str[i] == '+')
     {
-        dest[i] = src[i];
+        if (str[i] == '-')
+        {
+            sign *= -1;
+        }
         i++;
     }
-    return (dest);
+    while (str[i] >= '0' && str[i] <= '9')
+    {
+        result = result * 10 + (str[i] - 48);
+        i++;
+    }
+    return (result * sign);
 }
