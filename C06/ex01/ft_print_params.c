@@ -1,39 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*   ft_print_params.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/22 13:50:26 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/23 22:05:23 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/29 21:44:04 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/29 21:54:27 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 
-int ft_atoi(char *str)
+int main(int argc, char **argv)
 {
     int i;
-    int result;
-    int sign;
+    int j;
 
-    i = 0;
-    result = 0;
-    sign = 1;
-    while (str[i] <= ' ')
-        i++;
-    while (str[i] == '-' || str[i] == '+')
+    i = 1;
+    j = 0;
+    (void) argc;
+    while (argv[i])
     {
-        if (str[i] == '-')
+        while (argv[i][j])
         {
-            sign *= -1;
+            write (1, &argv[i][j], 1);
+            j++;
         }
+        j = 0;
         i++;
+        write(1, "\n", 1);
     }
-    while (str[i] >= '0' && str[i] <= '9')
-    {
-        result = result * 10 + (str[i] - 48);
-        i++;
-    }
-    return (result * sign);
 }

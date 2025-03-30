@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/19 16:14:03 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/19 16:15:22 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/29 14:28:22 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/29 14:30:24 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void    ft_putstr(char *str)
+void ft_putstr(char *str)
 {
     int i;
 

@@ -5,12 +5,13 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/19 16:32:06 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/19 17:59:58 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/29 14:30:56 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/29 22:52:38 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+#include <stdio.h>
 
 void    ft_putchar(char c)
 {
@@ -41,10 +42,13 @@ void    ft_putnbr(int nb)
 /*
 int main()
 {
-    ft_putnbr(48);
+    ft_putnbr(42);
     write (1, "\n", 1);
     ft_putnbr(0);
     write (1, "\n", 1);
     ft_putnbr(-42);
+    write (1, "\n", 1);
+    ft_putnbr(-2147483648);
+    write (1, "\n", 1);
 }
 */

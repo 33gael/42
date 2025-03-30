@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/17 11:50:32 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/17 14:16:54 by qludger          ###   ########.fr       */
+/*   Created: 2025/03/29 12:23:31 by qludger           #+#    #+#             */
+/*   Updated: 2025/03/29 12:27:16 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ int ft_strncmp(char *s1, char *s2, unsigned int n)
     {
         i++;
     }
-    if (n < 1)
+    while (n < 1)
     {
         return (0);
     }
