@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/29 21:54:52 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/29 22:15:22 by qludger          ###   ########.fr       */
+/*   Created: 2025/04/05 12:37:14 by qludger           #+#    #+#             */
+/*   Updated: 2025/04/05 12:50:23 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,18 +14,18 @@
 
 int main(int argc, char **argv)
 {
-    int j;
+    int i;
 
-    j = 0;
+    i = 0;
     while (argv[argc - 1] && argc > 1)
     {
-        while (argv[argc - 1][j])
+        while (argv[argc - 1][i])
         {
-            write (1, &argv[argc - 1][j], 1);
-            j++;
+            write (1, &argv[argc - 1][i], 1);
+            i++;
         }
-        j = 0;
         argc--;
+        i = 0;
         write(1, "\n", 1);
     }
 }
