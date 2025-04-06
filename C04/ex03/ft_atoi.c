@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/30 14:41:30 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/31 19:25:36 by qludger          ###   ########.fr       */
+/*   Created: 2025/04/06 18:57:15 by qludger           #+#    #+#             */
+/*   Updated: 2025/04/06 22:30:24 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,8 @@ int ft_atoi(char *str)
     sign = 1;
     result = 0;
     while ((str[i] == 32) || (str[i] >= 9 && str[i] <= 13))
-    {
         i++;
-    }
-    while (str[i] == '-' || str[i] == '+')
+    while (str[i] == '+' || str[i] == '-')
     {
         if (str[i] == '-')
             sign *= -1;
@@ -36,9 +34,3 @@ int ft_atoi(char *str)
     }
     return (result * sign);
 }
-/*
-int main()
-{
-    ft_atoi("42");
-}
-*/
