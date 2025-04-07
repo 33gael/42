@@ -5,17 +5,16 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/03/29 14:30:56 by qludger           #+#    #+#             */
-/*   Updated: 2025/03/31 19:27:36 by qludger          ###   ########.fr       */
+/*   Created: 2025/04/07 19:30:09 by qludger           #+#    #+#             */
+/*   Updated: 2025/04/07 23:32:50 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
-#include <stdio.h>
 
 void    ft_putchar(char c)
 {
-    write (1, &c, 1);
+    write(1, &c, 1);
 }
 
 void    ft_putnbr(int nb)
@@ -27,9 +26,9 @@ void    ft_putnbr(int nb)
     }
     if (nb == -2147483648)
     {
-        write (1, "2147483648", 10);
+        write(1, "2147483648", 11);
     }
-    if (nb >= 0 && nb < 10)
+    if (nb >= 0 && nb <= 9)
     {
         ft_putchar(nb + '0');
     }
@@ -39,16 +38,3 @@ void    ft_putnbr(int nb)
         ft_putnbr(nb % 10);
     }
 }
-/*
-int main()
-{
-    ft_putnbr(42);
-    write (1, "\n", 1);
-    ft_putnbr(0);
-    write (1, "\n", 1);
-    ft_putnbr(-42);
-    write (1, "\n", 1);
-    ft_putnbr(-2147483648);
-    write (1, "\n", 1);
-}
-*/
