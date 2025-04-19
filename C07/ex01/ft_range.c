@@ -6,7 +6,7 @@
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/19 13:43:20 by qludger           #+#    #+#             */
-/*   Updated: 2025/04/19 14:21:32 by qludger          ###   ########.fr       */
+/*   Updated: 2025/04/19 14:43:01 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@ int *ft_range(int min, int max)
     
     if (min >= max)
         return (NULL);
-    
     size = max - min;
     res = malloc(sizeof(int) * size);
     if (!res)
