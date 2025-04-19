@@ -1,34 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_range.c                                         :+:      :+:    :+:   */
+/*   ft_ultimate_range.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/19 13:43:20 by qludger           #+#    #+#             */
-/*   Updated: 2025/04/19 15:09:30 by qludger          ###   ########.fr       */
+/*   Created: 2025/04/19 14:44:33 by qludger           #+#    #+#             */
+/*   Updated: 2025/04/19 15:07:53 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdlib.h>
 
-int *ft_range(int min, int max)
+int ft_ultimate_range(int **range, int min, int max)
 {
-    int *res;
     int i;
-    int size;
-    
-    if (min >= max)
-        return (NULL);
-    size = max - min;
-    res = malloc(sizeof(int) * size);
-    if (!res)
-        return (NULL);
+    int res;
+
     i = 0;
-    while (i < size)
+    if(min >= max)
+        return (NULL);
+    *range = max - min;
+    if (*range[i])
     {
-        res[i] = min + i;
+        res = malloc(sizeof(int) * **range);
+        return (*range);
         i++;
     }
+    else
+        return (-1);
     return (res);
 }
