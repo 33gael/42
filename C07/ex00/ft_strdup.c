@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
+/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/04/18 15:12:09 by qludger           #+#    #+#             */
-/*   Updated: 2025/04/18 23:17:36 by qludger          ###   ########.fr       */
+/*   Updated: 2025/04/24 11:56:28 by marvin           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ char *ft_strdup(char *src)
         res[i] = src[i];
         i++;
     }
+    res[i] = '\0';
     return (res);
 }
