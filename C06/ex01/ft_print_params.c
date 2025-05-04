@@ -5,29 +5,29 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: qludger <qludger@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/04/02 18:21:32 by qludger           #+#    #+#             */
-/*   Updated: 2025/04/03 12:41:13 by qludger          ###   ########.fr       */
+/*   Created: 2025/05/04 13:26:34 by qludger           #+#    #+#             */
+/*   Updated: 2025/05/04 16:47:38 by qludger          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-int main(int argc, char **argv)
+int main(int ac, char **av)
 {
     int i;
     int j;
 
     i = 1;
     j = 0;
-    (void) argc;
-    while (argv[i])
+    (void) ac;
+    while(av[i])
     {
-        while (argv[i][j])
+        while(av[i][j])
         {
-            write (1, &argv[i][j], 1);
+            write(1, &av[i][j], 1);
             j++;
         }
-        write (1, "\n", 1);
+        write(1, "\n", 1);
         i++;
         j = 0;
     }
